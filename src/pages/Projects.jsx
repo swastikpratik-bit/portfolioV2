@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { projects } from "../data/projects";
-import ProjectCard from "../components/ProjectCard";
 import ProjectV2 from "../components/ProjectV2";
+import { projects } from "../data/projects";
 
 const Projects = () => {
-  const [filter, setFilter] = useState("all");
+  const [filter, setFilter] = useState("featured");
 
   const filteredProjects =
     filter === "all"
@@ -41,16 +40,6 @@ const Projects = () => {
           >
             <div className="flex space-x-4 bg-white dark:bg-gray-800 p-2 rounded-lg shadow-lg">
               <button
-                onClick={() => setFilter("all")}
-                className={`px-6 py-3 rounded-md font-medium transition-all duration-200 ${
-                  filter === "all"
-                    ? "bg-primary-500 text-white shadow-md"
-                    : "text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400"
-                }`}
-              >
-                All Projects
-              </button>
-              <button
                 onClick={() => setFilter("featured")}
                 className={`px-6 py-3 rounded-md font-medium transition-all duration-200 ${
                   filter === "featured"
@@ -60,6 +49,17 @@ const Projects = () => {
               >
                 Featured
               </button>
+              <button
+                onClick={() => setFilter("all")}
+                className={`px-6 py-3 rounded-md font-medium transition-all duration-200 ${
+                  filter === "all"
+                    ? "bg-primary-500 text-white shadow-md"
+                    : "text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400"
+                }`}
+              >
+                All Projects
+              </button>
+              
             </div>
           </motion.div>
 

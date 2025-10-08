@@ -67,7 +67,7 @@ const About = () => {
                 frontend interfaces, and learning how to deploy reliable web
                 solutions.
               </p>
-              <div className="grid grid-cols-2 gap-4">
+              {/* <div className="grid grid-cols-2 gap-4">
                 <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
                   <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
                     Experience
@@ -84,7 +84,7 @@ const About = () => {
                     10+
                   </p>
                 </div>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>
