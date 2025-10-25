@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { FaGithub, FaLinkedin, FaArrowDown } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaArrowDown , FaWhatsapp} from "react-icons/fa";
 import { HiCode, HiDesktopComputer, HiLightBulb } from "react-icons/hi";
 import ResumeCard from "../components/ResumeCard";
 
@@ -103,12 +103,20 @@ const Home = () => {
                   <FaGithub className="w-6 h-6" />
                 </a>
                 <a
-                  href="https://linkedin.com/swastikpratiksingh"
+                  href="https://linkedin.com/in/swastikpratiksingh"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-200"
                 >
                   <FaLinkedin className="w-6 h-6" />
+                </a>
+                <a
+                  href="https://wa.me/9335178511?text=Hi%20I%20saw%20your%20portfolio%20website!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-200"
+                >
+                  <FaWhatsapp className="w-6 h-6" />
                 </a>
               </motion.div>
             </div>
